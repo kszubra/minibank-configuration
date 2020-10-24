@@ -1,0 +1,18 @@
+server:
+  port: 7778
+
+spring:
+  application:
+    name: customers
+  profiles:
+    active: development
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+customers:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/customersDb
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
