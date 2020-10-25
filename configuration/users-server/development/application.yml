@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: users
+    name: users-server
   profiles:
     active: development
   jpa:
