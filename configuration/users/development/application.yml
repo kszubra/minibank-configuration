@@ -3,16 +3,16 @@ server:
 
 spring:
   application:
-    name: customers
+    name: users
   profiles:
     active: development
   jpa:
     hibernate:
       ddl-auto: update
 
-customers:
+users:
   datasource:
-    url: jdbc:postgresql://localhost:5433/customersDb
-    username: postgres
-    password: password
+    url: jdbc:postgresql://localhost:5433/usersDb
+    username: usersUser
+    password: usersPasswd
     driver-class-name: org.postgresql.Driver
