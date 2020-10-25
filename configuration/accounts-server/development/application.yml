@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: accounts-server
+  profiles:
+    active: development
+  datasource:
+    url: jdbc:postgresql://localhost:5435/accountsDb
+    platform: postgres
+    continue-on-error: true
+    username: accountsUser
+    password: accountsPasswd
+  jpa:
+    hibernate:
+      ddl-auto: update
