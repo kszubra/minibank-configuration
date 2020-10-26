@@ -1,0 +1,14 @@
+server:
+  port: 8051
+
+spring:
+  application:
+    name: spring-gateway-server
+  profiles:
+    active: development
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
