@@ -1,0 +1,17 @@
+server:
+  port: 7779
+
+spring:
+  application:
+    name: transactions-server
+  profiles:
+    active: development
+  datasource:
+    url: jdbc:postgresql://localhost:5436/transactionsDb
+    platform: postgres
+    continue-on-error: true
+    username: transactionsUser
+    password: transactionsPasswd
+  jpa:
+    hibernate:
+      ddl-auto: update
