@@ -1,0 +1,18 @@
+server:
+  port: 7780
+
+spring:
+  application:
+    name: cards-server
+  profiles:
+    active: development
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+customers:
+  datasource:
+    url: jdbc:postgresql://localhost:5437/cardsDb
+    username: cardsUser
+    password: cardsPasswd
+    driver-class-name: org.postgresql.Driver
