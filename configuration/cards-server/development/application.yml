@@ -6,13 +6,12 @@ spring:
     name: cards-server
   profiles:
     active: development
+  datasource:
+    url: jdbc:postgresql://localhost:5437/cardsDb
+    platform: postgres
+    continue-on-error: true
+    username: cardsUser
+    password: cardsPasswd
   jpa:
     hibernate:
       ddl-auto: update
-
-customers:
-  datasource:
-    url: jdbc:postgresql://localhost:5437/cardsDb
-    username: cardsUser
-    password: cardsPasswd
-    driver-class-name: org.postgresql.Driver
