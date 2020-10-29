@@ -7,7 +7,7 @@ spring:
   profiles:
     active: development
   datasource:
-    url: jdbc:postgresql://accounts_db:5435/accountsDb
+    url: jdbc:postgresql://accounts_db:5432/accountsDb
     platform: postgres
     continue-on-error: true
     username: accountsUser
