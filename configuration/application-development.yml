@@ -2,4 +2,4 @@ eureka-client:
   eureka-client:
     fetchRegistry: true
   serviceUrl:
-    defaultZone=http://admin-server:8761/eureka/:
+    defaultZone: ${DISCOVERY_URL:http://admin-server:8761}/eureka/
