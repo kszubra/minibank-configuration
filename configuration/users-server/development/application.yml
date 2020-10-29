@@ -12,7 +12,7 @@ spring:
 
 users:
   datasource:
-    url: jdbc:postgresql://localhost:5433/usersDb
+    url: jdbc:postgresql://users_db:5432/usersDb
     username: usersUser
     password: usersPasswd
     driver-class-name: org.postgresql.Driver
